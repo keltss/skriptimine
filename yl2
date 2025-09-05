@@ -1,0 +1,8 @@
+#! /bin/bash
+
+echo "Tanane kuupaev ja kellaaeg:"
+date
+
+echo ""
+echo "Kuu kalender:"
+cal
