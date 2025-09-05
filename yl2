@@ -1,0 +1,8 @@
+#! /bin/bash
+
+echo "Praegune kuupaev ja kellaaeg:"
+date +"%A, %d %B %Y %H:%M:%S"
+
+echo ""
+echo "Kuu kalender:"
+cal
