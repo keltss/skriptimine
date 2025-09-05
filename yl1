@@ -1,7 +1,0 @@
-#! /bin/bash
-kasutaja="$(echo "$USER" | sed 's/.*/\u&/')"
-
-echo -n "Tere,"
-echo -n "$USER"
-echo "!"
-
