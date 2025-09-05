@@ -1,0 +1,7 @@
+#! /bin/bash
+
+echo -n "Tere,"
+username=$(whoami)
+echo -n "${username^}"
+echo "!"
+
