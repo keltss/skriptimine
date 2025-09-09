@@ -1,0 +1,16 @@
+#!/bin/bash
+# Autor: Kelly Veljaots
+# Kirjeldus: Arvutab uhe nadala ajakulu ainepunktide pohjal.
+
+echo -n "Sisesta ainepunktide arv: "
+read ainepunktid
+echo -n "Sisesta nadalate arv: "
+read nadalad
+
+kokku=$((ainepunktid * 26))
+
+# Arvutame uhe nadala ajakulu ja umardame ulespoole
+
+aeg_nadalas=$(awk -v k=$kokku -v n=$nadalad 'BEGIN {print int((k/n) + 0.9999)}')
+
+echo "Uhe nadala eeldatav ajakulu on $aeg_nadalas tundi."

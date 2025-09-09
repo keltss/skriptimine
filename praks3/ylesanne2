@@ -1,0 +1,10 @@
+#!/bin/bash
+# Autor: Kelly Veljaots
+# Kirjeldus: Muutujate uhendamine uheks lauseliseks valjundiks.
+
+aasta=2016
+president="Kersti Kaljulaid"
+lause_keskosa=". aastal valiti Eesti presideniks "
+lause="$aasta$lause_keskosa$president"
+
+echo "$lause"

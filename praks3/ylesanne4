@@ -1,0 +1,15 @@
+#!/bin/bash
+# Autor: Kelly Veljaots
+# Kirjeldus: Arvutab busside arvu ja ulejaanud reisijad.
+
+echo -n "Sisesta reisijate arv: "
+read reisijad
+echo -n "Sisesta kohtade arv uhes bussis: "
+read kohad
+
+taisbussid=$((reisijad / kohad))
+ulejaanud=$((reisijad % kohad))
+
+echo "Taidetud busse: $taisbussid"
+echo "Ulejaanud reisijad: $ulejaanud"
+
