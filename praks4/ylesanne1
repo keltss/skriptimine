@@ -1,0 +1,16 @@
+#!/bin/bash
+# paaris ja paaritu arvu kontroll
+
+# kysi kasutajalt arvu
+echo -n "Sisesta suvaline taisarv: "
+read arv
+
+# Jaga jaak 2-ga
+jaak=$(( arv % 2))
+
+#Kontrolli tulemust
+if [ $jaak -eq 0 ]; then
+	echo "Antud arv on paaris"
+else
+	echo "Antud arv on paaritu"
+fi 

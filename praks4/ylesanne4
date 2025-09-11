@@ -1,0 +1,21 @@
+#!/bin/bash
+# paaris ja paaritu arvu kontroll
+
+# kontrolli argumentide arvu
+if [ $# -ne 1 ]; then
+	echo "K'ivita see skript koos arvuga, mille paarisust soovid kontrollida."
+	echo "Naiteks: ./ylesanne4 10"
+	exit 1
+fi 
+# Vota esimene argument
+arv=$1 
+
+# Jaga jaak 2-ga
+jaak=$(( arv % 2))
+
+#Kontrolli tulemust
+if [ $jaak -eq 0 ]; then
+        echo "Antud arv on paaris"
+else
+        echo "Antud arv on paaritu"
+fi
