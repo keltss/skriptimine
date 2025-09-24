@@ -1,0 +1,14 @@
+#!/bin/bash
+# Skript väljastab kasutaja määratud ridade ja tärnide arvu
+
+read -p "Sisesta ridade arv: " read_rows
+read -p "Sisesta tärnide arv reas: " read_cols
+
+for (( i=1; i<=read_rows; i++ ))
+do
+  for (( j=1; j<=read_cols; j++ ))
+  do
+    echo -n "* "
+  done
+  echo " # $i. rida"
+done

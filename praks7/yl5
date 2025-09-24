@@ -1,0 +1,21 @@
+#!/bin/bash
+# Skript väljastab kujundi, kus vasakul on 'o' ja paremal '*'
+
+read -p "Sisesta ridade arv: " read_rows
+
+for (( i=1; i<=read_rows; i++ ))
+do
+  # vasak pool – 'o'
+  for (( j=1; j<=read_rows-i; j++ ))
+  do
+    echo -n "o "
+  done
+
+  # parem pool – '*'
+  for (( k=1; k<=i; k++ ))
+  do
+    echo -n "* "
+  done
+
+  echo " # $i. rida"
+done
